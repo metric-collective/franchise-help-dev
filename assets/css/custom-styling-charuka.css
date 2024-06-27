@@ -1,3 +1,27 @@
-.body{
+.fr_h1_highlight{
+    color: #39868D;
+}
+
+.fr_hero_center_col{
+    display: flex;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+}
+
+.fr_home_hero h1{
+    text-align: center;
+    margin: 0 auto;
+}
+.fr_home_hero p{
+    text-align: center;
+}
+.fr_home_hero{
     
+    padding-top: 66px;
+    padding-bottom: 70px;;
+
 }
