@@ -134,8 +134,16 @@ li.has_sub_menu:after {
     top: 5px;
     left: 8px;
 }
+<<<<<<< Updated upstream
+=======
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+>>>>>>> Stashed changes
+
     h1 {
         font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
@@ -144,6 +152,7 @@ li.has_sub_menu:after {
         font-variation-settings: "slnt" 0;
         font-size: 32px;
         line-height: 42px;
+        text-align: left;
     }
     
     h2 {
@@ -154,6 +163,7 @@ li.has_sub_menu:after {
         font-variation-settings: "slnt" 0;
         font-size: 28px;
         line-height: 36px;
+        text-align: left;
     }
     
     h3 {
@@ -164,6 +174,7 @@ li.has_sub_menu:after {
         font-variation-settings: "slnt" 0;
         font-size: 24px;
         line-height: 32px;
+        text-align: left;
     }
     
     h4 {
@@ -174,6 +185,7 @@ li.has_sub_menu:after {
         font-variation-settings: "slnt" 0;
         font-size: 20px;
         line-height: 26px;
+        text-align: left;
     }
     
     h5 {
@@ -184,6 +196,7 @@ li.has_sub_menu:after {
         font-variation-settings: "slnt" 0;
         font-size: 18px;
         line-height: 24px;
+        text-align: left;
     }
     
     h6 {
@@ -194,5 +207,10 @@ li.has_sub_menu:after {
         font-variation-settings: "slnt" 0;
         font-size: 16px;
         line-height: 21px;
+        text-align: left;
+    }
+
+    p {
+        text-align: left;
     }
 }
