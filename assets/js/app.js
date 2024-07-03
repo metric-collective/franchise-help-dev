@@ -1,11 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-
-    hamburger.addEventListener('click', function() {
-        mobileMenu.classList.toggle('open');
-        console.log('Menu toggled');
+    $('#hamburger').click(function() {
+        $('.mobile_menu').slideToggle();
     });
+    
+
+    //Logo carousel
+    var $logoContainer  = $('.fr_logo_container');
+    var $logoInner      = $('<div class="fr_logo_inner"></div>');
+    var $logos          = $logoContainer.children().clone();
+
+    $logoInner.append($logos).append($logos.clone());
+    $logoContainer.empty().append($logoInner);
+
+    function startScrolling() {
+        $logoInner.css('transform', 'translateX(0)');
+        $logoInner.animate({ 'transform': 'translateX(-100%)' }, 15000, 'linear', function() {
+            startScrolling();
+        });
+    }
+
+    startScrolling();
+
 });
 
-console.log('Script loaded');
