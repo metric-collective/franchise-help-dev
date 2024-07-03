@@ -21,7 +21,11 @@
 }
 .fr_home_hero{
     padding-top: 99px;
-    padding-bottom: 89px;;
+    
+}
+.fr-logo-carousel-section{
+    padding-bottom: 89px;
+
 }
 .fr_hero_right_img{
     position: relative;
@@ -301,7 +305,8 @@ p.fr_checout_list_dece {
 
 .fr_main_nav_links li {
     position: relative;
-    padding: 10px;
+    cursor: pointer;
+    
 }
 
 
@@ -310,10 +315,9 @@ p.fr_checout_list_dece {
     padding-left: 0;
     padding-right: 0;
     white-space: nowrap;
+    
 }
-li.has_sub_menu:after{
-    top: 11px !important;
-}
+
 
 .fr_main_nav_links .dropdown_menu {
    
@@ -341,6 +345,7 @@ ul.dropdown_menu li {
     padding-top: 4px;
     cursor: pointer;
 }
+
 
 
 @media only screen and (max-width: 768px) {
@@ -413,6 +418,21 @@ ul.dropdown_menu li {
         position: absolute;
         width: 100%;
     }
+
+}
+@media only screen and (max-width: 1244px)  and (min-width: 990px) {
+    .fr_main_btn_a.fr_btn_dark a {
+        font-size: 14px;
+        padding: 14px 13px;
+    }
+}
+@media only screen and (max-width: 1200px)  and (min-width: 990px) {
+    
+    .fr_main_nav_links_wrapper ul{
+        gap: 30px;
+        font-size: 14px;
+    }
+   
 
 }
 
