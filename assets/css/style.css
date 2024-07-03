@@ -156,6 +156,10 @@ body {
 .fr_btn_light{
     display: inline-block;
 }
+.fr_btn_dark:hover a{
+    background-color: var(--cyan);
+    transition: 0.4s;
+}
 .fr_btn_dark a{
     display: inline-block;
     border-radius: 100px;
@@ -165,6 +169,7 @@ body {
     color: var(--white);
     font-weight: 500;
     padding: 14px 32px 13px;
+    transition: 0.4s;
 }
 .fr_btn_light a{
     display: inline-block;
@@ -176,7 +181,13 @@ body {
     line-height: 21px;
     text-align: center;
     padding: 14px 32px 13px;
+    transition: 0.4s;
 
+}
+.fr_btn_light:hover a{
+    border: 1px solid var(--cyan);
+    color:var(--cyan);
+    transition: 0.4s;
 }
 .fr_btn_goast{
     display: inline-block;

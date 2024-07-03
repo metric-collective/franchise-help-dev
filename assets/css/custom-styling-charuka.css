@@ -349,6 +349,9 @@ ul.dropdown_menu li {
 
 
 @media only screen and (max-width: 768px) {
+    .fr_our_resources h2 {
+        text-align: left;
+      }
 
     .d-none-mobile{
         display: none;
