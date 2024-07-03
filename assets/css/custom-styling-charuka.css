@@ -40,19 +40,12 @@ padding: 18px 96px  17px;
     position: relative;
     top: -32px;
 }
-.fr_logo_container {
-    display: flex;
-    align-items: center;
-    column-gap: 88px;
-    opacity: 0.5;
-    padding-top: 70px;
-    overflow: hidden;
-}
 h2.fr_section_title {
     margin: 0;
 }
 .fr_hero_content_container{
     margin-bottom: 70px;
+    position: relative;
 }
 .fr_section_content_col{
     display: flex;
@@ -125,10 +118,15 @@ img.fr_quiz_iem_box_img {
     width: 100%;
 }
 .fr_why_choose_content_wapper{
+    background-repeat: no-repeat !important;
     padding: 80px;
     border-radius: 16px;
     display: flex;
-    background: url('../images/whychoosebackground.png');
+    background: url(../images/whychoosebackground.png);
+    align-items: center;
+}
+.why_choose_content_left h2 {
+    max-width: 500px;
 }
 .why_choose_content_left h2{
     margin-top: 32px;
@@ -298,6 +296,55 @@ p.fr_checout_list_dece {
 
     .d-none-mobile{
         display: none;
+    }
+
+}
+@media only screen and (max-width: 1600px)  and (min-width: 900px) {
+    .fr_hero_right_img {
+        width: 100%;
+        position: absolute;
+        left: unset;
+        top: 148px;
+        right: -15px;
+        max-width: 270px;
+    }
+    .fr_hero_left_img {
+        top: -26px;
+        left: -28px;
+        max-width: 260px;
+        position: absolute;
+        /* top: -32px; */
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 900px)  and (min-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .fr_our_resourec_left_col_wapper {
+        width: 100%;
+    }
+    .fr_our_resources_row_2 {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .fr_hero_right_img {
+        width: 100%;
+        position: absolute;
+        left: unset;
+        top: 148px;
+        right: -15px;
+        max-width: 270px;
+    }
+    .fr_hero_left_img {
+        top: -26px;
+        left: -28px;
+        max-width: 260px;
+        position: absolute;
+        /* top: -32px; */
+        width: 100%;
     }
 
 }
