@@ -136,7 +136,70 @@
     display: none;
 }
 
+@media (max-width: 990px) {
+
+    .fr_checkout_list_right_col {
+        padding-left: 0px;
+    }
+
+    .fr_our_resourec_left_col_wapper{
+        padding-right: 0px;
+        margin-bottom: 24px;
+    }
+
+    .fr_our_resourec_right_col{
+        padding-left: 0px;
+    }
+
+
+    .fr_why_choose_content_wapper{
+        padding: 40px;
+    }
+
+    /* Quiz Section Mobile */
+
+    .fr_get_from_our_quiz{
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    .fr_section_content_col{
+        row-gap: 16px;
+    }
+
+    .fr_3box_quiz_wapper{
+        padding-top: 40px;
+        padding-bottom: 32px;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    .fr_3box_quiz_wapper .fr_3box_quiz_item {
+        width: 100%;
+        padding-bottom: 0px!important;
+    }
+
+    img.fr_quiz_iem_box_img {
+        position: relative;
+    }
+
+    .fr_3box_quiz_item.quiz_item_2 img.fr_quiz_iem_box_img{
+        max-width: 100%;
+        right: unset;
+        left: unset;
+    }
+}
+
 @media (max-width: 768px) {
+
+    .fr_3box_quiz_wapper h4.fr_quiz_item_box_title, .fr_3box_quiz_wapper p{
+        text-align: left;
+    }
+
+    .fr_3box_quiz_wapper .fr_3box_quiz_item {
+        padding: 40px 24px;
+        min-height: unset;
+    }
 
     .container{
         padding-left: 17px;
@@ -186,28 +249,6 @@
         padding-top: 44px;
     }
 
-    /* Quiz Section Mobile */
-
-    .fr_get_from_our_quiz{
-        padding-top: 80px;
-        padding-bottom: 40px;
-    }
-
-    .fr_section_content_col{
-        row-gap: 16px;
-    }
-
-    .fr_3box_quiz_wapper{
-        padding-top: 40px;
-        padding-bottom: 32px;
-        flex-direction: column;
-        row-gap: 24px;
-    }
-
-    .fr_3box_quiz_wapper .fr_3box_quiz_item {
-        width: 100%;
-    }
-
     /* Why Choose Section */
 
     .fr_why_choose{
@@ -218,6 +259,11 @@
         flex-direction: column;
         background: url('../images/why-choose-mobile-bg.png');
         padding: 24px;
+        background-size: cover;
+    }
+
+    .why_choose_content_right img {
+        padding-top: 20px;
     }
 
     /* List of Franchises Section */
@@ -285,6 +331,7 @@
 
     .fr_our_resourec_left_col_wapper{
         padding-right: 0px;
+        margin-bottom: 0px;
     }
 
     .fr_our_resources_row_2{

@@ -23,7 +23,13 @@
             <div class="col-lg-8 col-md-8 col-sm-6 fr_main_nav_links_col d-none d-lg-flex">
                 <div class="fr_main_nav_links_wrapper">
                     <ul class="fr_main_nav_links">
-                        <li class="has_sub_menu">About us</li>
+                        <li class="has_sub_menu">About us
+                            <ul class="dropdown_menu">
+                                <li><a href="#our-team">Our Team</a></li>
+                                <li><a href="#our-mission">Our Mission</a></li>
+                                <li><a href="#our-history">Our History</a></li>
+                            </ul>
+                        </li>
                         <li class="has_sub_menu">For franchisees</li>
                         <li class="has_sub_menu">For franchisors</li>
                         <li class="has_sub_menu">Tools & resources</li>
@@ -31,7 +37,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 d-none d-lg-flex">
+            <div class="col-lg-2 col-md-2 col-sm-2 d-none d-lg-flex justify-content-end">
                 <div class="fr_main_btn_a fr_btn_dark">
                     <a href="#">Take our quiz</a>
                 </div>
@@ -469,5 +475,17 @@
     </div>
 </footer>
 
+<script>
+    $(document).ready(function() {
+        $('.has_sub_menu').click(function(event) {
+            event.stopPropagation();
+            $(this).find('.dropdown_menu').toggle();
+        });
+
+        $(document).click(function() {
+            $('.dropdown_menu').hide();
+        });
+    });
+</script>
 </body>
 </html>
