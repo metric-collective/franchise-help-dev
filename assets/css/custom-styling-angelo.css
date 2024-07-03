@@ -92,35 +92,6 @@
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\  */
 
-/*Logo carousel*/
-.fr_log_single_item{
-    margin-right: 88px;
-}
-.fr_logo_container {
-    display: flex;
-    align-items: center;
-    column-gap: 88px;
-    opacity: 0.5;
-    padding-top: 70px;
-    overflow: hidden; 
-}
-
-.fr_logo_inner {
-    display: flex;
-    align-items: center;
-    animation: scroll 25s linear infinite;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-
 
 /* Mobile Resposive All Other Sections */
 

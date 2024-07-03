@@ -7,6 +7,7 @@
     <link href="../franchise-help-dev/assets/css/style.css" rel="stylesheet">
     <link href="../franchise-help-dev/assets/css/custom-styling-charuka.css" rel="stylesheet">
     <link href="../franchise-help-dev/assets/css/custom-styling-angelo.css" rel="stylesheet">
+    <link href="../franchise-help-dev/assets/css/custom-styling-kushan.css" rel="stylesheet">
     <script src="../franchise-help-dev/assets/js/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Franchise Help</title>
@@ -474,38 +475,6 @@
     </div>
 </footer>
 
-
-
-
-
-
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const carousel = document.querySelector('.carousel');
-    const slides = document.querySelectorAll('.slide');
-    const numSlides = slides.length;
-
-    // Clone the slides to create a seamless loop
-    for (let i = 0; i < numSlides; i++) {
-        const clone = slides[i].cloneNode(true);
-        carousel.appendChild(clone);
-    }
-
-    let currentIndex = 0;
-    setInterval(() => {
-        currentIndex++;
-        if (currentIndex === numSlides) {
-            carousel.style.transition = 'none';
-            carousel.style.transform = 'translateX(0)';
-            currentIndex = 0;
-        } else {
-            carousel.style.transition = 'transform 0.5s';
-            carousel.style.transform = `translateX(-${currentIndex * 20}%)`;
-        }
-    }, 4000); // Change slide every 4 seconds
-});
-</script>
 <script>
     $(document).ready(function() {
         $('.has_sub_menu').click(function(event) {
