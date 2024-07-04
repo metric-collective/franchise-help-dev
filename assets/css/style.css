@@ -450,6 +450,22 @@ li.has_sub_menu:after {
     padding-right: 0px;
 }
 
+.fr_footer_bottom p{
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+}
+.fr_footer_bottom hr {
+    background-color: #17171794;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+.fr_footer_bottom {
+    margin-bottom: 24px;
+}
+
+
+
 @media only screen and (max-width: 990px) {
     .fr_footer {
         text-align: center;
@@ -492,7 +508,7 @@ li.has_sub_menu:after {
     }
 
     .fr_footer_social_container {
-        display: none;
+        display: none !important;
     }
 
     .fr_ifa_logo {
