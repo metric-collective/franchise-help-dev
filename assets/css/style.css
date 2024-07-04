@@ -441,6 +441,22 @@ li.has_sub_menu:after {
     padding-right: 0px;
 }
 
+.fr_footer_copyright .container{
+    width: 100%;
+}
+
+@media only screen and (max-width: 1224px) {
+
+    .fr_footer_copyright .container{
+        width: 90%;
+    }
+
+    .fr_footer_copyright {
+        max-width: unset;
+    }
+
+}
+
 @media only screen and (max-width: 990px) {
     .fr_footer {
         text-align: center;
@@ -454,6 +470,10 @@ li.has_sub_menu:after {
 
     .fr_footer_social {
         justify-content: center;
+    }
+
+    .fr_footer_copyright .container{
+        width: 90%;
     }
 
     .fr_footer_copyright .col-12 {
