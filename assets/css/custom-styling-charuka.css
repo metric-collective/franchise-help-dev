@@ -82,7 +82,7 @@ p.fr_section_desc {
 }
 .fr_3box_quiz_wapper .fr_3box_quiz_item{
     width: 33%;
-    padding: 32px 40px 0px;
+    padding: 40px 32px 0px;
     position: relative;
     border-radius: 16px;
     min-height: 412px;
@@ -91,7 +91,7 @@ p.fr_section_desc {
 .fr_3box_quiz_wapper h4.fr_quiz_item_box_title{
     text-align: center;
     margin: 0;
-    padding-bottom: 17px;
+    padding-bottom: 16px;
 }
 .fr_3box_quiz_wapper p{
     text-align: center;
@@ -113,8 +113,8 @@ img.fr_quiz_iem_box_img {
 }
 .fr_3box_quiz_item.quiz_item_2 img.fr_quiz_iem_box_img {
     max-width: 326px;
-    right: -10px !important;
-    left: 28px;
+    /*right: -10px !important;
+    left: 28px;*/
 }
 
 .why_choose_content_right img{
@@ -261,8 +261,7 @@ p.fr_checout_list_dece {
 }
 .fr_our_resources_row_2 h4{
     margin-top: 12px;
-    margin-bottom: 16px;
-
+    margin-bottom: 32px;
 }
 .fr_resorce_4_1{
     background-color: var(--soft-lavender);
@@ -365,6 +364,10 @@ ul.dropdown_menu li {
     }
     .fr_hero_left_img {
        display: none;
+    }
+
+    .fr_our_resources_row_2 h4{
+        margin-bottom: 24px;
     }
 
 }
