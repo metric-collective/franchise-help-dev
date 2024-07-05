@@ -35,7 +35,7 @@ input.fr_newsletter_input:not(:placeholder-shown) {
 }
 
 .fr_newsletter_input {
-    padding: 14px 24px 13px;
+    padding: 14px 24px 14px;
     font-size: 16px;
     line-height: 21px;
     border-radius: 100px;
@@ -48,11 +48,13 @@ input.fr_newsletter_input:not(:placeholder-shown) {
 .fr_newsletter_form .fr_btn_dark {
     border-radius: 100px;
     margin-left: -60px;
+    top: -1px!important;
+    position: relative;
 }
 
 
-.fr_newsletter_form .fr_btn_dark a{
-    padding: 15px 32px 12px;
+.fr_newsletter_form .fr_btn_dark a {
+    padding: 14px 32px 14px!important;
 }
 
 .fr_newsletter_input:focus-visible {
