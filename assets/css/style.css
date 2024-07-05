@@ -17,6 +17,9 @@
     --cream-white: #F9F5F1;
     --pearl-blush: #F8F2EE;
     --mid-tone-gray: #646464;
+    --warm-snow:#FCFAF8;
+    --sea-blue: #D7E6E8;
+
 
 }
 
@@ -143,6 +146,10 @@ body {
     color: #171717;
 }
 .fr_main_header {
+    background-color: var(--pearl-blush);
+    top: 0;
+    z-index: 1000;
+    position: sticky;
     height: 80px;
     display: flex;
     align-content: center;
@@ -302,6 +309,7 @@ li.has_sub_menu:after {
         text-align: center;
         margin-top: 24px;
     }
+   
 
     .fr_btn_dark a{
         color: var(--white);
