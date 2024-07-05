@@ -2,6 +2,7 @@
 
 :root {
     --black: #171717;
+    --black-opacity: #17171714;
     --cyan: #39868D;
     --linen:#F1E6DE;
     --white:#ffffff;
@@ -15,6 +16,7 @@
     --charcoal-gray: #4A4A4A;
     --cream-white: #F9F5F1;
     --pearl-blush: #F8F2EE;
+    --mid-tone-gray: #646464;
 
 }
 
