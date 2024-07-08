@@ -460,6 +460,11 @@ p.fr_drop_item_normal_text {
 }
 
 @media only screen and (max-width: 990px) {
+    .fr_3box_quiz_item.quiz_item_3 p {
+        max-width: unset;
+        padding-bottom: 24px;
+        margin: 0 auto;
+    }
     .fr_drop_item_left_icon_col{
         width: 32px;
         height: 32px;
