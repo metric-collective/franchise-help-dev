@@ -971,22 +971,6 @@
     </div>
 </footer>
 
-<!-- <div class="fr_footer_copyright">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-6">
-                <p>&copy; 2024 FranchiseHelp Holdings LLC. All rights reserved</p>
-            </div>
-            <div class="col-md-6 col-6 fr_footer_social_container">
-                <ul class="fr_footer_social">
-                    <li><a href="#"><img src="../franchise-help-dev/assets/images/facebook-logo.svg" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="../franchise-help-dev/assets/images/instagram-logo.svg" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="../franchise-help-dev/assets/images/twitter-logo.svg" alt="Twitter"></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div> -->
 
 <div class="fr_footer_bottom">
     <div class="container">
@@ -1009,60 +993,6 @@
     </div>
 </div>
 
-<script>
 
-
-    
-    $(document).ready(function() {
-        // $('.nav-item.dropdown').on('click', function() {
-        // // Remove the class from all .fr_nav_menu_dropdown elements
-        //     $('.fr_nav_menu_dropdown').removeClass('your-class');
-            
-        //     // Check if the current dropdown has the 'show' class
-        //     if ($(this).hasClass('show')) {
-        //         $(this).find('.fr_nav_menu_dropdown').addClass('your-class');
-        //     }
-        // });
-
-        // // Remove the class when clicking outside of the dropdown
-        // $(document).on('click', function(event) {
-        //     if (!$(event.target).closest('.nav-item.dropdown').length) {
-        //         $('.fr_nav_menu_dropdown').removeClass('your-class');
-        //     }
-        // });
-
-        $('#navbarNav a[data-toggle="collapse"]').on('click', function() {
-        var target = $(this).attr('href');
-        if ($(target).hasClass('show')) {
-          $(target).collapse('hide');
-        } else {
-          $('#navbarNav .collapse').collapse('hide');
-          $(target).collapse('show');
-        }
-      });
-
-        $('.nav-item.dropdown').hover(
-            function() {
-                $(this).addClass('show');
-                $(this).find('.dropdown-menu').stop(true, true).fadeIn(300).addClass('show');
-            },
-            function() {
-                $(this).removeClass('show');
-                $(this).find('.dropdown-menu').stop(true, true).fadeOut(300).removeClass('show');
-            }
-        );
-        $('.navbar-toggler').click(function(){
-            $('#nav-icon2').toggleClass('open');
-        });
-        $('.has_sub_menu').click(function(event) {
-            event.stopPropagation();
-            $(this).find('.dropdown_menu').toggle();
-        });
-
-        $(document).click(function() {
-            $('.dropdown_menu').hide();
-        });
-    });
-</script>
 </body>
 </html>
