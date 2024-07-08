@@ -523,6 +523,8 @@ p.fr_drop_item_normal_text {
     .fr_dropdown_inner_wapper {
         padding-left: 0;
         padding-right: 0;
+        padding-bottom: 8px;
+        padding-top: 8px;
     }
   
     .fr_main_header {
