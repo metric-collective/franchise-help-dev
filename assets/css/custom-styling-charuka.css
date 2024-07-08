@@ -649,6 +649,9 @@ p.fr_drop_item_normal_text {
         display: none;
 
     }
+    .fr_3box_quiz_item.quiz_item_3 img {
+        bottom: -7px;
+    }
     
     .fr_nav_menu_dropdown{
         padding: 8px;
