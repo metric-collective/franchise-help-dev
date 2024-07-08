@@ -38,15 +38,15 @@ document.addEventListener('DOMContentLoaded', function() {
         var $allNavItem         = $('.fr-archive-nav-item.is-all');
         
         function filterTags(tag) {
-            $archiveSingles.fadeOut();
-                $archiveSingles.each(function() {
+            $archiveSingles.fadeOut(3000);
+                $archiveSingles.each(function() { 
                     var $single = $(this);
                     var hasTag = $single.find('.fr-archive-single-tag').filter(function() {
                         return $(this).text().trim() === tag;
                     }).length > 0;
                     
                     if (hasTag) {
-                        $single.fadeIn(300);
+                        $single.fadeIn(3000);
                     }
                 
             });
