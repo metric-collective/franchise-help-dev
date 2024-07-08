@@ -1,3 +1,9 @@
+$(document).ready(function() {
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     $('#hamburger').click(function() {
         $('.mobile_menu').slideToggle();
@@ -110,4 +116,5 @@ document.addEventListener('DOMContentLoaded', function() {
     $logoContainer.empty().append($logoInner);
 
 });
+
 
