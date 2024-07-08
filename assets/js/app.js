@@ -1,14 +1,9 @@
-$(document).ready(function() {
-    $("#header").load("header.html");
-    $("#footer").load("footer.html");
-
-});
-
 document.addEventListener('DOMContentLoaded', function() {
     $('#hamburger').click(function() {
         $('.mobile_menu').slideToggle();
     });
-    
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
 
     //Logo carousel
     var $logoContainer  = $('.fr_logo_container');
