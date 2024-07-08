@@ -22,6 +22,9 @@
 
 
 }
+.row {
+    --bs-gutter-x: 0;
+}
 
 h1 {
     font-family: "Inter", sans-serif;
