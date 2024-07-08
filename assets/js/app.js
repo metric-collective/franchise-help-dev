@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var $allNavItem         = $('.fr-archive-nav-item.is-all');
         
         function filterTags(tag) {
-            $archiveSingles.fadeOut(3000);
+            $archiveSingles.fadeOut();
                 $archiveSingles.each(function() { 
                     var $single = $(this);
                     var hasTag = $single.find('.fr-archive-single-tag').filter(function() {
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }).length > 0;
                     
                     if (hasTag) {
-                        $single.fadeIn(3000);
+                        $single.fadeIn(300);
                     }
                 
             });
