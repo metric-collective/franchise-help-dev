@@ -517,11 +517,14 @@ p.fr_drop_item_normal_text {
         padding-left: 0;
         padding-right: 0;
     }
-    .fr_main_header {
-        background-color: var(--pearl-blush);
+    #header{
         top: 0;
         z-index: 1000;
         position: sticky;
+
+    }
+    .fr_main_header {
+        background-color: var(--pearl-blush);
         padding: 16px 0;
         height: unset;
     }
