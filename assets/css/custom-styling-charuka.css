@@ -1,6 +1,10 @@
 .fr_title_highlight{
     color: var(--cyan);
 }
+.your-class{
+    background-color: red;
+
+}
 
 .fr_hero_center_col{
     display: flex;
@@ -199,7 +203,7 @@ p.fr_checout_list_dece {
 }
 .fr_our_resources{
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 120px;
     background-color: var(--cream-white);
 }
 .fr_our_resources h2{
@@ -256,9 +260,7 @@ p.fr_checout_list_dece {
     padding-top: 32px;
    
 }
-.fr_our_resources_row_2_content_wapper .fr_btn_goast {
-    margin-top: 16px;
-}
+
 .fr_our_resources_row_2 h4{
     margin-top: 12px;
     margin-bottom: 32px;
@@ -315,6 +317,10 @@ p.fr_checout_list_dece {
     padding-right: 0;
     white-space: nowrap;
     
+}
+.fr_3box_quiz_item.quiz_item_3 p {
+    max-width: 260px;
+    margin: 0 auto;
 }
 
 
@@ -452,6 +458,45 @@ p.fr_drop_item_normal_text {
 }
 
 @media only screen and (max-width: 990px) {
+    .fr_drop_item_left_icon_col{
+        width: 32px;
+        height: 32px;
+    }
+    .fr_drop_item_left_icon_col svg {
+        width: 16px;
+        height: 16px;
+    }
+    p.fr_drop_item_bold_text {
+        padding-bottom: 0;
+        font-weight: 400;
+        color: var(--charcoal-gray);
+    }
+    ul.navbar-nav .nav-item.dropdown:first-child a.nav-link.dropdown-toggle{
+        border-top: unset;
+    }
+    
+    a.nav-link.dropdown-toggle {
+        border-top: 1px solid #E5E5E5;
+        padding-bottom: 24px;
+        padding-top: 24px;
+    }
+    /* .fr_nav_menu_dropdown{
+        
+
+    }
+    .fr_nav_menu_dropdown.your-class{
+        -webkit-animation: fadeIn 0.5s;
+        animation: fadeIn 0.5s;
+    }
+    @-webkit-keyframes fadeIn {
+        from { opacity: 0; height: 0; }
+        to { opacity: 1; height: 100%; }
+    }
+
+    @keyframes fadeIn {
+        from { visibility:hidden; height: 0;}
+        to { visibility:visible; height: 100%}
+    } */
     .fr_burger_menu_bottom{
         position: relative;
         display: flex;
@@ -488,6 +533,7 @@ p.fr_drop_item_normal_text {
     }
     img.fr_logo_mobile {
         z-index: 1001;
+        max-width: 143px;
     }
     /* Icon 3*/
     #nav-icon2 span:nth-child(4) {
@@ -512,7 +558,7 @@ p.fr_drop_item_normal_text {
       display: block;
       position: absolute;
       height: 3px;
-      width: 50%;
+      width: 55%;
       background: var(--black);
       opacity: 1;
       -webkit-transform: rotate(0deg);
@@ -609,28 +655,47 @@ p.fr_drop_item_normal_text {
         background: transparent;
         border: none;
     }
+    ul.fr_nav_menu_dropdown.dropdown-menu {
+        padding-bottom: 24px;
+        padding-top: 0;
+    }
+    .fr_nav_menu_dropdown li:last-child .fr_dropdown_inner_wapper{
+        padding-bottom: 0px !important;
+
+    }
+    .fr_nav_menu_dropdown li:first-child .fr_dropdown_inner_wapper{
+        padding-top: 0px !important;
+
+    }
+    .fr_navbar ul.navbar-nav {
+        height: 75vh;
+        overflow: auto;
+    }
     div#fr_navbarNavDropdown.navbar-collapse {
         padding-left: 17px;
         padding-right: 17px;
-        visibility: hidden;
-        transform: translateX(-100%);
+        /* visibility: hidden;
+        transform: translateY(-100%); */
         border-radius: 0;
         display: block;
         position: fixed;
         top: 0;
         left: 0;
-        height: 100%;
+        opacity: 0;
+        height: 0vh;
         z-index: 9;
-        padding-top: 26%;
+        padding-top: 72px;
         width: 100%;
-        overflow-y: hidden;
-        overflow-x: hidden;
-        transition: visibility .3s ease-in-out, transform .3s ease-in-out;
+        overflow: hidden !important;
+        transition: .3s;
         background-color: var(--pearl-blush);
     }
     div#fr_navbarNavDropdown.navbar-collapse.show {
-        visibility: visible;
-        transform: translateX(0);
+        opacity: 1;
+        transition: .4s;
+        height: 100vh;
+        /* visibility: visible;
+        transform: translateY(0); */
     }
     .fr_hero_right_img {
         display: none;
@@ -645,6 +710,7 @@ p.fr_drop_item_normal_text {
 
 }
 @media only screen and (min-width: 990px){
+   
     .fr_burger_menu_bottom{
         display: none;
 
